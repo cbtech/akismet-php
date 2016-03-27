@@ -114,6 +114,6 @@ Akismet API Documentation: https://akismet.com/development/api/#detailed-docs
 
 ## Creator
 
-*Antonio Tajuelo*
+**Antonio Tajuelo**
 - https://github.com/antoniotajuelo
 - https://twitter.com/antoniotajuelo
