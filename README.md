@@ -40,13 +40,15 @@ var_dump($isSpamComment);
 
 ## Available Methods
 
-### verifyKey
+### verifyKey()
 
 Checks if your key is valid. Does not take any parameters.
 
-### commentCheck
+### commentCheck()
 
 This is the call you will make the most. It takes a number of arguments and characteristics about the submitted content and then returns a thumbs up or thumbs down. Performance can drop dramatically if you choose to exclude data points. The more data you send Akismet about each comment, the greater the accuracy. We recommend erring on the side of including too much data.
+
+This method takes an array of parameters containing any amount of the following keys.
 
 Parameter | Required | Description
  --- | --- | --- | ---
@@ -66,11 +68,13 @@ Parameter | Required | Description
 ```user_role``` | - | The user role of the user who submitted the comment. This is an optional parameter. If you set it to "administrator", Akismet will always return false.
 ```is_test``` | - | This is an optional parameter. You can use it when submitting test queries to Akismet.
 
-### submitSpam
+### submitSpam()
 
 This call is for submitting comments that weren't marked as spam but should have been.
 
 It is very important that the values you submit with this call match those of your comment-check calls as closely as possible. In order to learn from its mistakes, Akismet needs to match your missed spam and false positive reports to the original comment-check API calls made when the content was first posted. While it is normal for less information to be available for submit-spam and submit-ham calls (most comment systems and forums will not store all metadata), you should ensure that the values that you do send match those of the original content.
+
+This method takes an array of parameters containing any amount of the following keys.
 
 Parameter | Required | Description
  --- | --- | --- | ---
@@ -84,11 +88,13 @@ Parameter | Required | Description
 ```comment_author_url``` | - | URL submitted with comment.
 ```comment_content``` | - | The content that was submitted.
 
-### submitHam
+### submitHam()
 
 This call is intended for the submission of false positives - items that were incorrectly classified as spam by Akismet. It takes identical arguments as comment check and submit spam.
 
 Remember that, as explained in our submit-spam documentation, you should ensure that any values you're passing here match up with the original and corresponding comment-check call.
+
+This method takes an array of parameters containing any amount of the following keys.
 
 Parameter | Required | Description
  --- | --- | --- | ---
