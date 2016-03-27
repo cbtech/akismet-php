@@ -1,5 +1,6 @@
 {
     "name": "antoniotajuelo/akismet-php",
+    "version": "0.0.0",
     "description": "Stop spam from hitting your website comments or content using Akismet.",
     "keywords": ["akismet","spam","antispam","spam filter"],
     "homepage": "https://github.com/antoniotajuelo/akismet-php",
