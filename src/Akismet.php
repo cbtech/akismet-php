@@ -50,7 +50,7 @@ class Akismet
       );
   }
 
-  public function commentCheck($params)
+  public function submitHam($params)
   {
     return $this->request(
       'https://' . $this->key . '.rest.akismet.com/1.1/submit-ham',
