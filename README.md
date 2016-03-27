@@ -10,6 +10,8 @@ Then install the package using Composer and check the following code samples.
 ## Code Sample
 
 ```php
+use AntonioTajuelo\Akismet\Akismet;
+
 $akismet = new Akismet('YOUR-AKISMET-KEY','YOUR-WEBSITE-URL');
 
 // Check if the Akismet key is valid
