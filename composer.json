@@ -1,14 +1,20 @@
 {
-    "name": "antoniotajuelo/akismet-php",
+    "name": "cbtech/akismet-php",
     "description": "Stop spam from hitting your website comments or content using Akismet.",
     "keywords": ["akismet","spam","antispam","spam filter"],
-    "homepage": "https://github.com/antoniotajuelo/akismet-php",
+    "homepage": "https://github.com/cbtech/akismet-php",
     "license": "MIT",
     "authors": [
         {
             "name": "Antonio Tajuelo",
             "email": "atajuelo@gmail.com",
             "homepage": "https://www.antoniotajuelo.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Andrew Phillips",
+            "email": "andrew@cbtech.co.uk",
+            "homepage": "http://www.cbtech.co.uk",
             "role": "Developer"
         }
     ],
@@ -18,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AntonioTajuelo\\Akismet\\": "src"
+            "CBTECH\\Akismet\\": "src"
         }
     }
 }
