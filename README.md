@@ -7,7 +7,7 @@ First, get your Akismet key (if you still do not have one) from here: https://ak
 
 Then install the package using Composer and add this line to your ```require``` statement.
 ```json
-"antoniotajuelo/akismet-php": "0.0.1"
+"cbtech/akismet-php": "0.0.2"
 ```
 
 And finally run from terminal:
@@ -18,7 +18,7 @@ sudo composer update
 ## Code Sample
 
 ```php
-use AntonioTajuelo\Akismet\Akismet;
+use CBTECH\Akismet\Akismet;
 
 $akismet = new Akismet('YOUR-AKISMET-KEY','YOUR-WEBSITE-URL');
 
