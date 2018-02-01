@@ -1,4 +1,4 @@
-<?php namespace AntonioTajuelo\Akismet;
+<?php namespace CBTECH\Akismet;
 
 class Akismet
 {
